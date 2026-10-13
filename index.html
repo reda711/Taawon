@@ -7,26 +7,44 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline flex justify-center">
-    Hello world!
-  </h1>
-    <!-- <header>
-        <nav>
-            <div class="logoImage">
-                <img src="assets/TAAWONLogoNavFoot.png" alt="logo image">
+    
+    <header class="var(--color-brown)">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+
+            <a href="index.html" class="shrink-0">
+                <img
+                    src="assets/TAAWONLogoNavFoot.png"
+                    alt="Taawon — Accueil"
+                    class="h-12 w-auto"
+                >
+            </a>
+
+            <div class="menu hidden items-center gap-6 lg:flex">
+                <a href="index.html" aria-current="page"
+                class="font-medium text-green hover:text-brown">
+                    Accueil
+                </a>
+                <a href="cooperatives.html"
+                class="font-medium text-green hover:text-brown">
+                    Coopératives
+                </a>
+                <a href="a-propos.html"
+                class="font-medium text-green hover:text-brown">
+                    À propos
+                </a>
+                <a href="partenaire.html"
+                class="font-medium text-green hover:text-brown">
+                    Devenir partenaire
+                </a>
             </div>
 
-            <div class="menu">
-                <a href="#">Accueil</a>
-                <a href="#">Coopératives</a>
-                <a href="#">À propos</a>
-                <a href="#">Devenir partenaire</a>
-            </div>
+            <a href="partenaire.html"
+            class="hidden rounded-lg bg-brown px-5 py-3 font-semibold text-white hover:opacity-90 lg:inline-flex">
+                Rejoindre Taawon
+            </a>
 
-            <div class="rejoindreButton">
-                <a href="#"><button>Rejoindre Taawon</button></a>
-            </div>
         </nav>
-    </header> -->
+    </header>
+
 </body>
 </html>

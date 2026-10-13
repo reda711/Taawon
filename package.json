@@ -1,0 +1,26 @@
+{
+  "name": "taawon",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000a\u0000a\u0000w\u0000o\u0000n\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src.css -o ./output.css",
+    "dev": "tailwindcss -i ./src.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reda711/Taawon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/reda711/Taawon/issues"
+  },
+  "homepage": "https://github.com/reda711/Taawon#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

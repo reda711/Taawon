@@ -9,8 +9,8 @@
     --font-header-footer: "Poppins", sans-serif;
     --font-main: "Montserrat", sans-serif;
 
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
+    --shadow-card: 0 4px 12px rgb(41 43 39 / 10%);
+    --shadow-hover: 0 8px 24px rgb(41 43 39 / 16%);
 }
 
 img {

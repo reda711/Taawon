@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+    --brown: #B85C38; 
+    --green: #244C3A;
+    --white:#E9DDC8;
+    --black: #292B27;
+
+    --font-header-footer: "Poppins", sans-serif;
+    --font-main: "Montserrat", sans-serif;
+
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+}

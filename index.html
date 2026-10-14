@@ -1,49 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taawon | Accueil</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body> 
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
     <header class="bg-white">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+      <nav
+        class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 text-black"
+      >
+        <!-- LOGO -->
+        <a href="index.html" class="shrink-0">
+          <img
+            src="assets/TAAWONLogoNavFoot.png"
+            alt="Taawon"
+            class="h-auto w-32"
+          />
+        </a>
 
-            <a href="index.html" class="shrink-0">
-                <img
-                    src="assets/TAAWONLogoNavFoot.png"
-                    alt="Taawon — Accueil"
-                    class="h-12 w-auto"
-                >
+        <!-- DESKTOP NAVIGATION -->
+        <div class="hidden items-center gap-8 md:flex">
+          <a
+            href="index.html"
+            class="transition-colors text-brown bg-green/30 rounded-4xl p-3"
+            aria-current="page"
+          >
+            Accueil
+          </a>
+
+          <a
+            href="cooperatives.html"
+            class="transition-colors hover:text-brown ease"
+          >
+            Coopératives
+          </a>
+
+          <a href="a-propos.html" class="transition-colors hover:text-brown ease">
+            À propos
+          </a>
+
+          <a href="cooperative.html" class="transition-colors hover:text-brown ease">
+            Devenir partenaire
+          </a>
+        </div>
+
+        <!-- DESKTOP CTA -->
+        <a
+          href="#"
+          class="hidden rounded bg-brown px-4 py-3 text-sm text-white transition-colors hover:bg-green hover:text-brown ease lg:block"
+        >
+          Rejoindre Taawon ↗
+        </a>
+
+        <!-- MOBILE CHECKBOX SWITCH -->
+        <input type="checkbox" id="menu-toggle" class="peer sr-only" />
+
+        <!-- MOBILE HAMBURGER -->
+        <label
+          for="menu-toggle"
+          class="ml-4 cursor-pointer rounded p-2 text-2xl hover:bg-brown md:hidden"
+          aria-label="Ouvrir ou fermer le menu"
+        >
+          ☰
+        </label>
+
+        <!-- MOBILE DROPDOWN -->
+        <div
+          class="absolute left-0 top-full z-50 hidden w-full border-t border-gray-200 bg-white p-5 shadow-lg peer-checked:block md:hidden"
+        >
+          <div class="flex flex-col items-start gap-5">
+            <a
+              href="index.html"
+              class="text-brown transition-colors"
+              aria-current="page"
+            >
+              Accueil
             </a>
 
-            <div class="menu hidden items-center gap-6 lg:flex">
-                <a href="index.html" aria-current="page"
-                class="font-medium text-green hover:text-brown">
-                    Accueil
-                </a>
-                <a href="cooperatives.html"
-                class="font-medium text-green hover:text-brown">
-                    Coopératives
-                </a>
-                <a href="a-propos.html"
-                class="font-medium text-green hover:text-brown">
-                    À propos
-                </a>
-                <a href="partenaire.html"
-                class="font-medium text-green hover:text-brown">
-                    Devenir partenaire
-                </a>
-            </div>
-
-            <a href="partenaire.html"
-            class="hidden rounded-lg bg-brown px-5 py-3 font-semibold text-white hover:opacity-90 lg:inline-flex">
-                Rejoindre Taawon
+            <a
+              href="cooperatives.html"
+              class="transition-colors hover:text-brown"
+            >
+              Coopératives
             </a>
 
-        </nav>
+            <a href="a-propos.html" class="transition-colors hover:text-brown">
+              À propos
+            </a>
+
+            <a
+              href="cooperative.html"
+              class="transition-colors hover:text-brown"
+            >
+              Devenir partenaire
+            </a>
+
+            <!-- MOBILE CTA -->
+            <a
+              href="#"
+              class="w-full rounded bg-brown px-4 py-3 text-center text-white transition-colors hover:bg-green hover:text-brown"
+            >
+              Rejoindre Taawon ↗
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
-    
-</body>
+  </body>
 </html>

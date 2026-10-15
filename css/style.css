@@ -1,11 +1,11 @@
-
 @import "tailwindcss";
 
 @theme {
     --color-brown: #B85C38;
     --color-green: #244C3A;
-    --color-white: #E9DDC8;
+    --color-Siesta_Beach: #E9DDC8;
     --color-black: #292B27;
+    --color-white: #ffffff;
 
     --font-header-footer: "Poppins", sans-serif;
     --font-main: "Montserrat", sans-serif;

@@ -1,32 +1,193 @@
-
 @import "tailwindcss";
-
-@theme {
-    --color-brown: #B85C38;
-    --color-green: #244C3A;
-    --color-white: #E9DDC8;
-    --color-black: #292B27;
-
-    --font-header-footer: "Poppins", sans-serif;
-    --font-main: "Montserrat", sans-serif;
-
-    --shadow-card: 0 4px 12px rgb(41 43 39 / 10%);
-    --shadow-hover: 0 8px 24px rgb(41 43 39 / 16%);
-}
-
 :root {
-    --header-height: 80px;
-}
+  --brown: #b85c38;
+  --green: #244c3a;
+  --white: #e9ddc8;
+  --black: #292b27;
 
-* {
-    box-sizing: border-box;
-}
+  --font-header-footer: "Poppins", sans-serif;
+  --font-main: "Montserrat", sans-serif;
 
-html {
-    scroll-behavior: smooth;
+  --shadow-card: 0 4px 12px rgb(41 43 39 / 10%);
+  --shadow-hover: 0 8px 24px rgb(41 43 39 / 16%);
 }
 
 body {
-    margin: 0;
-    font-family: var(--font-main);
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  color: var(--black);
 }
+
+.first-hero {
+  @apply mx-auto flex w-full max-w-[1200px] flex-col gap-10 px-8 py-10 bg-white md:flex-row md:items-center;
+}
+
+.first-hero {
+  @apply w-full min-w-0 md:flex-1;
+}
+
+.first-hero > div:first-child {
+  @apply flex flex-col items-start;
+}
+.first-hero > div:first-child > p:first-child {
+  @apply mb-6 text-[10px] font-medium uppercase tracking-wide;
+  color: var(--brown);
+}
+
+.first-hero h1 {
+  @apply mb-6 text-5xl font-medium leading-tight tracking-tight;
+  font-family: Montserrat;
+  color: var(--black);
+}
+.first-hero h1 + p {
+  @apply mb-6 max-w-[420px] text-sm;
+}
+
+.first-hero > div:first-child > div {
+  @apply mb-8 flex flex-wrap gap-3;
+}
+
+.first-hero button {
+  @apply cursor-pointer border px-4 py-3 text-[11px] font-medium;
+  border-radius: 2px;
+  border-color: var(--brown);
+  color: var(--brown);
+}
+
+.first-hero .rejoindreButton {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+.first-hero > div:first-child > div ~ p {
+  @apply text-[11px];
+  color: var(--green);
+}
+
+.first-hero > div:nth-child(2) {
+  @apply min-w-0;
+}
+
+.first-hero img {
+  @apply block aspect-square w-[600px] object-cover;
+  border-radius: 4px;
+}
+
+.first-hero > div:nth-child(2) > div {
+  @apply mt-3 flex items-center justify-between text-[10px];
+  color: var(--green);
+}
+
+.first-hero > div:nth-child(2) > div a {
+  color: var(--brown);
+}
+.sectionA {
+  @apply mb-6 text-[10px] font-medium uppercase tracking-wide;
+  color: var(--brown);
+}
+.fourth-section {
+  @apply mx-auto w-full bg-white px-6 py-8 md:px-12 lg:px-[72px];
+  max-width: 1200px;
+}
+
+.fourth-section > div:first-child {
+  @apply mb-5 flex flex-col gap-3 md:flex-row md:items-end md:justify-between;
+}
+
+.fourth-section > div:first-child > div > p {
+  @apply mb-2 text-[9px] font-medium uppercase tracking-wide;
+  color: var(--brown);
+}
+
+.fourth-section h2 {
+  @apply text-2xl font-medium leading-tight md:text-3xl;
+  color: var(--black);
+  font-family: Montserrat;
+}
+
+.tofit {
+  display: flex;
+  justify-content: space-between;
+}
+.fourth-section > div:first-child > p {
+  @apply text-[10px] font-medium;
+  color: var(--brown);
+}
+
+.fourth-section > div:nth-child(2) {
+  @apply flex flex-col gap-4 sm:flex-row sm:flex-wrap;
+}
+
+.fourth-section .card {
+  @apply min-w-0 overflow-hidden border bg-white;
+  flex: 1 1 calc(33.333% - 1rem);
+  border-color: #eee5d9;
+  border-radius: 2px;
+}
+
+.fourth-section .card img {
+  @apply block h-[145px] w-full object-cover;
+}
+
+.fourth-section .card-info {
+  @apply flex flex-col items-start px-3 py-3;
+}
+
+.fourth-section .card-info > p:first-child {
+  @apply mb-2 text-[8px] font-medium uppercase;
+  color: var(--brown);
+}
+
+.fourth-section .card-info h3 {
+  @apply mb-2 text-sm font-medium leading-tight;
+  color: var(--black);
+}
+
+.fourth-section .card-info h3 + p {
+  @apply mb-2 text-[8px];
+  color: var(--green);
+}
+.fourth-section .card-info h3 + p + p {
+  @apply mb-3 text-[9px] leading-4;
+  color: var(--black);
+}
+.fourth-section .card-info a {
+  @apply text-[9px] font-medium;
+  color: var(--brown);
+  text-decoration: none;
+}
+
+.fourth-section .card-info a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .fourth-section .card {
+    flex-basis: calc(50% - 0.5rem);
+  }
+
+  .fourth-section .card img {
+    @apply h-[160px];
+  }
+}
+@media (min-width: 1024px) {
+  .fourth-section .card {
+    flex-basis: calc(33.333% - 0.75rem);
+  }
+
+  .fourth-section .card img {
+    @apply h-[145px];
+  }
+}
+
+/* .second-section {
+  @apply mx-0 my-0 bg-[var(--white)] flex flex-col py-10 px-20 items-center md:flex-row justify-center ;
+  color : var(--green)
+}
+.second-section > div {
+  @apply mx-auto flex items-center  gap-10 ;
+}
+
+.numbers{
+  @apply text-[40px] font-medium;
+} */

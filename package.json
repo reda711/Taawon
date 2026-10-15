@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/reda711/Taawon#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/cli": "^4.3.0",
     "tailwindcss": "^4.3.3"
   }
 }

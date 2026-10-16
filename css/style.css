@@ -70,7 +70,7 @@ body {
 }
 
 .first-hero img {
-  @apply block aspect-square w-[600px] object-cover;
+  @apply block aspect-square w-[450px] object-cover;
   border-radius: 4px;
 }
 
@@ -83,11 +83,11 @@ body {
   color: var(--brown);
 }
 .sectionA {
-  @apply mb-6 text-[10px] font-medium uppercase tracking-wide;
+  @apply mb-4 text-[10px] font-medium uppercase tracking-wide;
   color: var(--brown);
 }
 .fourth-section {
-  @apply mx-auto w-full bg-white px-6 py-8 md:px-12 lg:px-[72px];
+  @apply mx-auto  w-full bg-white px-6 py-8 md:px-12 lg:px-[72px];
   max-width: 1200px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .fourth-section > div:first-child > div > p {
-  @apply mb-2 text-[9px] font-medium uppercase tracking-wide;
+  @apply mb-2 text-[9px] font-medium uppercase;
   color: var(--brown);
 }
 
@@ -111,12 +111,12 @@ body {
   justify-content: space-between;
 }
 .fourth-section > div:first-child > p {
-  @apply text-[10px] font-medium;
+  @apply text-[11px] font-medium;
   color: var(--brown);
 }
 
 .fourth-section > div:nth-child(2) {
-  @apply flex flex-col gap-4 sm:flex-row sm:flex-wrap;
+  @apply flex flex-col gap-6 sm:flex-row sm:flex-wrap;
 }
 
 .fourth-section .card {
@@ -127,7 +127,7 @@ body {
 }
 
 .fourth-section .card img {
-  @apply block h-[145px] w-full object-cover;
+  @apply block h-[150px] w-full object-cover;
 }
 
 .fourth-section .card-info {
@@ -135,25 +135,25 @@ body {
 }
 
 .fourth-section .card-info > p:first-child {
-  @apply mb-2 text-[8px] font-medium uppercase;
+  @apply mb-2 text-[10px] font-medium uppercase;
   color: var(--brown);
 }
 
 .fourth-section .card-info h3 {
-  @apply mb-2 text-sm font-medium leading-tight;
+  @apply mb-2 text-sm font-medium;
   color: var(--black);
 }
 
 .fourth-section .card-info h3 + p {
-  @apply mb-2 text-[8px];
+  @apply mb-2 text-[10px];
   color: var(--green);
 }
 .fourth-section .card-info h3 + p + p {
-  @apply mb-3 text-[9px] leading-4;
+  @apply mb-3 text-[11px];
   color: var(--black);
 }
 .fourth-section .card-info a {
-  @apply text-[9px] font-medium;
+  @apply text-[10px] font-medium;
   color: var(--brown);
   text-decoration: none;
 }
@@ -161,33 +161,192 @@ body {
 .fourth-section .card-info a:hover {
   text-decoration: underline;
 }
-@media (min-width: 768px) {
-  .fourth-section .card {
-    flex-basis: calc(50% - 0.5rem);
-  }
 
-  .fourth-section .card img {
-    @apply h-[160px];
-  }
-}
-@media (min-width: 1024px) {
-  .fourth-section .card {
-    flex-basis: calc(33.333% - 0.75rem);
-  }
-
-  .fourth-section .card img {
-    @apply h-[145px];
-  }
+.fourth-section .card img {
+  @apply h-[145px];
 }
 
-/* .second-section {
-  @apply mx-0 my-0 bg-[var(--white)] flex flex-col py-10 px-20 items-center md:flex-row justify-center ;
-  color : var(--green)
+.second-section {
+  @apply mx-0 my-0 bg-[var(--white)] flex flex-col py-6 px-20 items-center md:flex-row justify-center;
+  color: var(--green);
 }
 .second-section > div {
-  @apply mx-auto flex items-center  gap-10 ;
+  @apply mx-auto flex w-full flex-col items-center;
 }
 
-.numbers{
+.numbers {
   @apply text-[40px] font-medium;
-} */
+}
+
+.sixth-section {
+  @apply mx-0 my-0 flex flex-col items-start gap-19 bg-[var(--white)] py-9 px-25 md:flex-row md:items-center;
+}
+.sixth-section > div {
+  @apply flex flex-col items-start;
+}
+.sixth-section > div > h2 {
+  @apply text-[30px] font-medium max-w-[270px];
+  font-family: Montserrat;
+}
+.sixth-section h2 + p {
+  @apply mt-4 mb-6 max-w-[400px] text-sm;
+}
+
+.sixth-section > div(2) {
+  @apply flex w-full flex-col items-start md:flex-row max-w-[1200px];
+}
+
+.register {
+  @apply flex w-full flex-col items-start gap-3 md:flex-row md:flex-nowrap;
+}
+
+.sixth-section input {
+  @apply w-full rounded-sm border-1 bg-white px-40 py-3 text-[12px];
+}
+
+.sixth-section .register a {
+  @apply inline-flex items-center justify-center rounded-sm
+px-5 py-3 text-[11px] font-medium text-white;
+  background-color: var(--brown);
+  text-decoration: none;
+}
+.checking {
+  @apply mt-4 mb-6 max-w-[400px] text-sm;
+}
+
+label {
+  @apply text-[19px] font-[large] w-full;
+}
+.fifth-section {
+  @apply mx-0 my-0 flex flex-col gap-5 bg-[var(--green)] px-10 py-14 md:px-16;
+  color: var(--white);
+}
+
+.fifth-section .voices-header {
+  @apply flex flex-col items-start;
+}
+
+.fifth-section .sectionA {
+  @apply mb-3 text-[9px] font-medium uppercase;
+  color: var(--white);
+}
+
+.fifth-section h2 {
+  @apply text-2xl font-medium leading-tight md:text-3xl;
+  font-family: Montserrat;
+  color: var(--white);
+}
+
+.fifth-section .voices-cards {
+  @apply flex flex-col  gap-10 md:flex-row md:justify-between md:gap-20;
+}
+
+.fifth-section .voice-card {
+  @apply flex min-w-0 flex-col items-start md:flex-1;
+}
+
+.fifth-section .voice-card > p:first-child {
+  @apply mb-4 text-xl leading-none;
+  color: white;
+}
+
+.fifth-section .voice-quote {
+  @apply mb-4 text-[15px] leading-relaxed;
+  color: white;
+}
+
+.fifth-section .voice-name {
+  @apply mb-1 text-[14px] font-medium;
+  color: white;
+}
+
+.fifth-section .voice-role {
+  @apply text-[13px] leading-tight;
+  color: white;
+}
+
+.third-section {
+  display: grid;
+  grid-template : repeat(3, auto) / repeat(4, minmax(0, 1fr));
+  gap : 20px 20px;
+  @apply mx-auto w-full max-w-6xl px-6 py-12;
+}
+
+.third-section > div:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+  @apply flex flex-col items-start gap-3;
+}
+
+.third-section > div:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 5;
+  align-self: end;
+  @apply text-sm leading-6;
+}
+
+.third-section > div:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 3;
+  align-self: start;
+}
+
+.third-section > div:nth-child(4) {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.third-section > div:nth-child(5) {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.third-section > div:nth-child(6) {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.third-section > div:nth-child(7) {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.third-section > div:nth-child(8) {
+  grid-area: 3 / 3 / 4 / 5;
+}
+
+.third-section .atelier {
+  @apply flex min-w-0 flex-col gap-2;
+}
+
+.third-section .atelier img {
+  @apply block w-full rounded-sm object-cover;
+  aspect-ratio: 1 / 1;
+}
+
+.third-section > div:nth-child(3) img,
+.third-section > div:nth-child(8) img {
+  aspect-ratio: 2 / 1;
+}
+
+.third-section .general-info > p {
+  @apply mb-2 text-[10px] font-medium uppercase;
+  color: var(--brown);
+}
+
+.third-section .general-info h2 {
+  @apply text-3xl font-medium ;
+  font-family: Montserrat;
+  color: var(--black);
+}
+
+.third-section .general-info2 {
+  @apply text-sm ;
+  color: var(--black);
+}
+
+.third-section .atelier a {
+  @apply w-fit text-xl font-medium no-underline;
+  font-family: Montserrat;
+  color: var(--brown);
+}
+
+.third-section .atelier > p {
+  @apply text-xs ;
+  color: var(--green);
+}
+
+.third-section .atelier a:hover {
+  color: burlywood ;
+}

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+:root {
+  --brown: #b85c38;
+  --green: #244c3a;
+  --white: #e9ddc8;
+  --black: #292b27;
+}
+@theme {
+    --color-brown: #B85C38;
+    --color-green: #244C3A;
+    --color-Siesta_Beach: #E9DDC8;
+    --color-black: #292B27;
+    --color-white: #ffffff;
+
+  --shadow-card: 0 4px 12px rgb(41 43 39 / 10%);
+  --shadow-hover: 0 8px 24px rgb(41 43 39 / 16%);
+}

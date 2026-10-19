@@ -14,6 +14,7 @@
 
   --shadow-card: 0 4px 12px rgb(41 43 39 / 10%);
   --shadow-hover: 0 8px 24px rgb(41 43 39 / 16%);
+<<<<<<< HEAD
 }
 
 body {
@@ -354,3 +355,6 @@ label {
 .third-section .atelier a:hover {
   color: burlywood ;
 }
+=======
+}
+>>>>>>> 9721044f105cf541a913d267d163bb33f3291e9e
